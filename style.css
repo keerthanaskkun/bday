@@ -1,0 +1,28 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Signika', sans-serif;
+    background: linear-gradient(to bottom, #6a11cb, #2575fc);
+    color: #fff;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+img {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* QR Code Section */
+.qr-code {
+    width: 150px;
+    margin: 10px auto;
+}
+
+/* Buttons */
+button {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+}
