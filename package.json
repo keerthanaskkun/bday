@@ -4,8 +4,8 @@
   "description": "A beautiful and interactive birthday website with gradient design, music, gallery, and animations.",
   "main": "index.html",
   "homepage": "https://keerthanaskkun.github.io/bday",
-  "scripts": {
-    "predeploy": "git add . && git commit -m 'Auto-deploy: Publishing to GitHub Pages'",
+  "scripts": { 
+    "predeploy": "git add . && git commit -m \"Auto-deploy: Publishing to GitHub Pages\"",
     "deploy": "gh-pages -d ."
   },
   "keywords": ["birthday", "website", "responsive", "interactive", "GitHub Pages"],
