@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="background-music" autoplay loop>
+        <source src="audio/hbd.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Header Section -->
+    <header class="text-center py-5">
+        <h1>🎉 Happy Anniversary 🎉</h1>
+        <p>A celebration of our love</p>
+    </header>
+
+    <!-- Photo Gallery -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">📸 Memories Gallery</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <img src="images/photo1.jpg" class="img-fluid rounded shadow" alt="Memory 1">
+            </div>
+            <div class="col-md-4">
+                <img src="images/photo2.jpg" class="img-fluid rounded shadow" alt="Memory 2">
+            </div>
+            <div class="col-md-4">
+                <img src="images/photo3.jpg" class="img-fluid rounded shadow" alt="Memory 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- QR Codes Section -->
+    <section class="container my-5 text-center">
+        <h2>📱 Special Memories</h2>
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <img src="images/qr1.png" class="qr-code img-fluid" alt="QR Code 1">
+                <p>Memory Link 1</p>
+            </div>
+            <div class="col-4">
+                <img src="images/qr2.png" class="qr-code img-fluid" alt="QR Code 2">
+                <p>Memory Link 2</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Buttons -->
+    <section class="text-center my-5">
+        <h2>🎈 Interactive Effects</h2>
+        <button class="btn btn-primary m-2" onclick="releaseBalloons()">Release Balloons</button>
+        <button class="btn btn-success m-2" onclick="showBanner()">Show Banner</button>
+        <button class="btn btn-warning m-2" onclick="showCake()">Show Cake</button>
+        <button class="btn btn-info m-2" onclick="playFavoriteSongs()">Play Music</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>Made with ❤️ for our 1st Anniversary</p>
+    </footer>
+
+    <!-- Bootstrap JS & Custom Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
