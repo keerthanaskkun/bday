@@ -1,28 +1,99 @@
-/* Global Styles */
 body {
-    margin: 0;
     font-family: 'Signika', sans-serif;
-    background: linear-gradient(to bottom, #6a11cb, #2575fc);
-    color: #fff;
+    background-color: #f0f8ff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-header h1 {
-    font-size: 3rem;
+/* Balloons */
+.balloons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
 }
 
-img {
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+.balloon {
+    width: 80px;
+    height: 100px;
+    margin: 0 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 2rem;
+    line-height: 100px;
+    text-align: center;
+    animation: float 2s ease-in-out infinite;
 }
 
-/* QR Code Section */
-.qr-code {
+.red { background-color: red; }
+.blue { background-color: blue; }
+.yellow { background-color: yellow; color: black; }
+
+/* Cake */
+.cake-container {
+    margin: 30px auto;
+}
+
+.cake {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.candles {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: -30px;
+    width: 100%;
+}
+
+.flame {
+    width: 10px;
+    height: 30px;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+/* Photos */
+.photos img {
     width: 150px;
-    margin: 10px auto;
+    height: auto;
+    margin: 10px;
+    border: 3px solid #ff69b4;
 }
 
-/* Buttons */
-button {
-    font-size: 1.1rem;
+/* QR Codes */
+.qr-section img {
+    width: 100px;
+    height: auto;
+    margin: 20px;
+}
+
+/* Controls */
+.controls button {
+    background-color: #ff1493;
+    color: white;
     padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Birthday Message */
+.message {
+    display: none;
+    font-size: 2rem;
+    color: #ff4500;
+    margin-top: 20px;
+}
+
+/* Animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
 }
